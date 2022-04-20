@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.winning-card-center{
+    display: flex;
+}
+.card,
+.winning-card{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 3.5rem;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card::before,
+.card::after,
+.winning-card::before,
+.winning-card::after{
+    content:attr(data-value);
+    font-size: 1rem;
+    position: absolute;   
+}
+.card::before,
+.winning-card::before {
+  top: .5rem;
+  left: .5rem
+}
+
+.card::after,
+.winning-card::after {
+  bottom: .5rem;
+  right: .5rem;
+  transform: rotate(180deg);
+}
+.card:hover{
+    background-color: lightgray;
+}

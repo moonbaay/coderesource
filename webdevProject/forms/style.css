@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+}
+.links{
+    display: flex;
+    list-style:none;
+}
+.links a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+/* ********sign up form */
+
+#signup{
+    border: 2px solid gray;
+    max-width:400px;
+    margin: 50px auto;
+}
+h4{
+    text-align: center;
+    text-transform: capitalize;
+}
+.signup-container{
+    display: grid;
+    padding: 15px;
+}
+#fname,
+#lname,
+#email,
+#password{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#signup-submit{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    height: 2rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#signup-submit:hover{
+    background-color: lightgray;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    margin: 0;
+}
+.logo-title {
+    margin: 9px 0;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(233, 233, 233);
+}
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    padding: 16px 20px;
+    color: black;
+    text-transform: uppercase;
+
+}
+li a:hover{
+    background-color: black;
+    color: white;
+}
+.homepage-image{
+    background-image: url("/images/dealmaster091919.png");
+    width: 80%;
+    margin: 5% 10%;
+}
+.container{
+    margin-top: 100px;
+    height: 600px;
+    background-color: black;
+    color: white;
+}
+.txt{
+    font-size: 75px;
+    margin: 40px 80px;
+}
+.description-heading{
+    margin: 50px 80px;
+    font-size: 40px;
+}
+.description-txt{
+    width: 500px;
+    margin: 0 80px;
+}
+
+.wrap{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    margin: 6rem 0;
+    width: 400px;
+    height: 250px;
+}
+.box:nth-of-type(1),
+.box:nth-of-type(2),
+.box:nth-of-type(3){
+    border-right: 2.5px solid rgb(196, 194, 194);
+}
